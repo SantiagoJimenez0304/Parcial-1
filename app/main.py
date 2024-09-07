@@ -1,10 +1,10 @@
-from cliente import Cliente
-from ventana import Ventana
-from nave import Nave
-from vidrio import Vidrio
-from aluminio import Aluminio
-from descuento import Descuento
-from cotizacion import Cotizacion
+from models.cliente import Cliente
+from models.ventana import Ventana
+from models.nave import Nave
+from models.vidrio import Vidrio
+from models.aluminio import Aluminio
+from models.descuento import Descuento
+from models.cotizacion import Cotizacion
 
 def calcular_total(ventana, vidrio, aluminio, descuento, cantidad):
     perimetro_ventana = 2 * (ventana.obtenerAncho() + ventana.obtenerAlto())  # suma de todos los lados
